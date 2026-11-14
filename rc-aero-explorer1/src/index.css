@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #0a0f1e; color: #e8edf6; font-family: 'IBM Plex Sans', system-ui, sans-serif; }
+.grid-bg {
+  background-color: #0a0f1e;
+  background-image:
+    linear-gradient(rgba(46,168,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46,168,255,.06) 1px, transparent 1px),
+    linear-gradient(rgba(46,168,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46,168,255,.03) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+}
+.glass { background: rgba(14,20,38,.62); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.08); }
+.label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+@keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+.hotspot-in { animation: fadein .6s .9s both; }
